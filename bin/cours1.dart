@@ -3,6 +3,7 @@ import "package:cours1/exercice02.dart" as exercice02;
 import "package:cours1/exercice03.dart" as exercice03;
 import "package:cours1/exercice04.dart" as exercice04;
 import "package:cours1/exercice05.dart" as exercice05;
+import "package:cours1/exercice06.dart" as exercice06;
 
 exercice1.Exercice1 c3po = exercice1.Exercice1();
 exercice02.Exercice02 exo2 = exercice02.Exercice02();
@@ -58,4 +59,8 @@ void main(List<String> arguments) {
     print('agility: ${char.capabilityRatios()['agility']!}%');
     print('intelligence: ${char.capabilityRatios()['intelligence']!}%');
   }
+
+  // exo 6
+
+  print(exercice06.calculateCost(exercice06.starshipSelection));
 }

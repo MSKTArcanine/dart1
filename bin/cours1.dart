@@ -4,6 +4,7 @@ import "package:cours1/exercice03.dart" as exercice03;
 import "package:cours1/exercice04.dart" as exercice04;
 import "package:cours1/exercice05.dart" as exercice05;
 import "package:cours1/exercice06.dart" as exercice06;
+import "package:cours1/exercice07.dart" as exercice07;
 
 exercice1.Exercice1 c3po = exercice1.Exercice1();
 exercice02.Exercice02 exo2 = exercice02.Exercice02();
@@ -63,4 +64,9 @@ void main(List<String> arguments) {
   // exo 6
 
   print(exercice06.calculateCost(exercice06.starshipSelection));
+
+  //exo 7
+
+  (() async => print(await exercice07.fetch()))();
+  (() async => print(await exercice07.VehicleService().findAll()))();
 }

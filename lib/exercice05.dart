@@ -23,9 +23,9 @@ class Character {
 
   Map<String, double> capabilityRatios(){
     return {
-      "force":force/power,
-      "agility":agility/power,
-      "intelligence":intelligence/power,
+      "force":((force/power) * 10000).round()/100,
+      "agility":((agility/power) * 10000).round()/100,
+      "intelligence":((intelligence/power) * 10000).round()/100,
     };
   }
 

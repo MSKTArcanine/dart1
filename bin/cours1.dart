@@ -54,5 +54,8 @@ void main(List<String> arguments) {
   final List<exercice05.Character> characters = List.generate(5, (i) => exercice05.characterFactory());
   for(exercice05.Character char in characters){
     print(char);
+    print('force: ${char.capabilityRatios()['force']!}%');
+    print('agility: ${char.capabilityRatios()['agility']!}%');
+    print('intelligence: ${char.capabilityRatios()['intelligence']!}%');
   }
 }

@@ -1,5 +1,4 @@
 import 'package:uuid/uuid.dart';
-import 'dart:core';
 
 class Starship {
   var uuid = Uuid();

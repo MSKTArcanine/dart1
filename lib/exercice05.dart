@@ -29,9 +29,14 @@ class Character {
       "intelligence":intelligence/power,
     };
   }
+
+  @override
+  String toString() {
+    return "Character(name: $name, faction: ${faction.name}, force: $force, agility: $agility, intelligence: $intelligence, power: $power)";
+  }
 }
 
-Character characterFactory(List<String> names){
+Character characterFactory(){
   String name = getRandomNameFromList(names);
   Faction faction = getRandomFaction();
   int force = getRandomStats();
@@ -44,8 +49,8 @@ String getRandomNameFromList(List<String> list){
   return list[Random().nextInt(list.length - 1)];
 }
 
-Faction getRandomFaction(){
-  return Faction.values[Random().nextInt(4)].name as Faction;
+Faction getRandomFaction() {
+  return Faction.values[Random().nextInt(Faction.values.length)];
 }
 
 int getRandomStats(){

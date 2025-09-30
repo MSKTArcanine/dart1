@@ -2,6 +2,7 @@ import "package:cours1/exercice01.dart" as exercice1;
 import "package:cours1/exercice02.dart" as exercice02;
 import "package:cours1/exercice03.dart" as exercice03;
 import "package:cours1/exercice04.dart" as exercice04;
+import "package:cours1/exercice05.dart" as exercice05;
 
 exercice1.Exercice1 c3po = exercice1.Exercice1();
 exercice02.Exercice02 exo2 = exercice02.Exercice02();
@@ -46,5 +47,12 @@ void main(List<String> arguments) {
     starshipNonVolant.fly();
   }catch(e){
     print(e.toString());
+  }
+
+  // exo 5
+
+  final List<exercice05.Character> characters = List.generate(5, (i) => exercice05.characterFactory());
+  for(exercice05.Character char in characters){
+    print(char);
   }
 }
